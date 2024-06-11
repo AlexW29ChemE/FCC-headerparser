@@ -30,3 +30,19 @@ code {
 a {
 	color: #2574A9;
 }
+
+list {
+	text-align: left;
+	background-color: lightgray;
+	padding:2rem;
+}
+
+#container{
+	display: flex;
+	justify-content: center;
+	
+}
+
+#error-text{
+	color: red;
+}

@@ -1,10 +1,10 @@
 {
   "name": "request-header-parser-microservice",
   "version": "0.0.2",
-  "description": "An FCC Backend Challenge - Header Parser",
+  "description": "A FCC Backend Challenge - Header Parser",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node --watch index.js"
   },
   "dependencies": {
     "cors": "^2.8.1",

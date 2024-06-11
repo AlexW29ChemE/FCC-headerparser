@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>Request Header Parser</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-   <head>
-      <title>Request Header Parser</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
+  <body>
+    <div class="container">
+      <h1>Request Header Parser Microservice</h1>
+      <p>Find out information being passed on by your browser</p>
+      <button type="button" id="send-request-btn">Who Am I</button>
 
-   <body>
-      <div class="container">
-        <h1>Request Header Parser Microservice</h1>
-
-        <h2>Example Usage:</h2>
-        <p>
-          <a href="api/whoami">[base url]/api/whoami</a>
-        </p>
-
-        <h2>Example Output:</h2>
-        <p>
-          <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
-        </p>
+      <h2>Output:</h2>
+      <div id="container">
+        <list>
+          <li>Ip Address: <span id="ip-address"></span></li>
+          <li>Language: <span id="language"></span></li>
+          <li>Software: <span id="software"></span></li>
+        </list>
       </div>
-      <div class="footer">
-        <p>
-          by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
-        </p>
+      <div style="height: 20px">
+        <p id="error-text"></p>
+        <p id="status-text"></p>
       </div>
-   </body>
-
-
+    </div>
+    <div class="footer">
+      <p>
+        Based on the course project from
+        <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+      </p>
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>
